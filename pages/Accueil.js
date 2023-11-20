@@ -8,6 +8,7 @@ import EstimValue from "../components/EstimValueComponent";
 
 
 
+
 const windowDimensions = Dimensions.get('window');
 const screenDimensions = Dimensions.get('screen');
 
@@ -67,6 +68,7 @@ export default function Accueil() {
             <View style={{flex:1,borderWidth: 1,borderColor: 'blue'}}>
                 <EstimValue></EstimValue>
             </View>
+            
         </View>
         
     );

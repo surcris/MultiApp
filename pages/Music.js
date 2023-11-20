@@ -1,12 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { Pressable, Modal, Button, StyleSheet, Text, View } from 'react-native';
-import BarMenu from './components/BarMenu';
-import { NavigationContainer } from "@react-navigation/native";
-import Accueil from './pages/Accueil';
 
 
-export default function App() {
+
+
+export default function Music() {
 
   const handleIconPress = () => {
     // Logique à exécuter lorsqu'on appuie sur l'icône
@@ -16,10 +15,9 @@ export default function App() {
   
 
   return (
-    <NavigationContainer>
-      <BarMenu></BarMenu>
-    </NavigationContainer>
-    // <Accueil></Accueil>
+    <View>
+        
+    </View>
   );
 }
 
