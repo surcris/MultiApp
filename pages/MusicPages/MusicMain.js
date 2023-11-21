@@ -4,6 +4,7 @@ import { TouchableOpacity } from 'react-native';
 import { Pressable, Modal, Button, StyleSheet, Text, View, Dimensions } from 'react-native';
 import MusicLecture from './MusicLecture';
 import MusicListe from './MusicListe';
+// import AudioProvider from '../../components/MusicComponents/AudioProvider';
 
 
 const windowHeight = Dimensions.get('window').height;
@@ -34,7 +35,7 @@ export default function MusicMain() {
                 </TouchableOpacity>
 
             </View>
-
+            
             <View style={styles.musicPageContainer}>
                 {isPlayerListe ? <MusicLecture/> : <MusicListe/>}
                 
