@@ -1,12 +1,13 @@
 import React from "react";
 import { Modal, View, Text, StyleSheet, ScrollView, Pressable, Dimensions } from "react-native";
-import ProfilComponent from "../components/ProfilComponent";
-import InfoRandom from "../components/InfoRandomComponent";
-import BulleText from "../components/BulleTextComponent";
-import CardOnOff from "../components/CardOnOff";
-import EstimValue from "../components/EstimValueComponent";
+import ProfilComponent from "../components/AccueilComponents/ProfilComponent";
+import InfoRandom from "../components/AccueilComponents/InfoRandomComponent";
+import BulleText from "../components/AccueilComponents/BulleTextComponent";
+import CardOnOff from "../components/AccueilComponents/CardOnOff";
+import EstimValue from "../components/AccueilComponents/EstimValueComponent";
 
 
+const windowHeight = Dimensions.get('window').height;
 
 
 const windowDimensions = Dimensions.get('window');
@@ -65,9 +66,9 @@ export default function Accueil() {
                     <CardOnOff info={cardInf[3]}></CardOnOff>
                 </View>
             </View>
-            <View style={{flex:1,borderWidth: 1,borderColor: 'blue'}}>
+            {/* <View style={{flex:1,borderWidth: 1,borderColor: 'blue'}}>
                 <EstimValue></EstimValue>
-            </View>
+            </View> */}
             
         </View>
         
@@ -76,8 +77,8 @@ export default function Accueil() {
 
 const styles = StyleSheet.create({
     accueilContainer: {
-        paddingTop:40,
-        flex:1,
+        marginTop: 30,
+        height: windowHeight - 70,
         flexDirection:'column',
     },
     contentCate: {
